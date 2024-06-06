@@ -1,0 +1,17 @@
+load("@infaas_deps//:requirements.bzl", "requirement")
+
+py_library(
+    name = "svc",
+    deps = [
+        requirement("requests"),
+    ],
+)
+
+py_binary(
+    name = "run_app",
+    srcs = ["app.py"],
+    deps = [
+        ":svc",
+    ],
+    main = "app.py",
+)
