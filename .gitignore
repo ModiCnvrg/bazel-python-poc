@@ -1,0 +1,13 @@
+bazel-testlogs
+bazel-bazel-python-test-project
+bazel-bin
+bazel-out
+MODULE.bazel.lock
+inference/model/config.json
+inference/model/generation_config.json
+inference/model/merges.txt
+inference/model/model.safetensors
+inference/model/special_tokens_map.json
+inference/model/tokenizer_config.json
+inference/model/vocab.json
+venv/*

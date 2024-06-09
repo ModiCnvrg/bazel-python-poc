@@ -36,7 +36,7 @@ load("@rules_python//python:pip.bzl", "pip_parse")
 # requirements_lock.txt.
 pip_parse(
    name = "infaas_deps",
-   requirements_lock = "//inference:requirements_lock.txt",
+   requirements_lock = "//inference:requirements.txt",
    python_interpreter_target = interpreter_3_11,
    download_only = True,
 )
