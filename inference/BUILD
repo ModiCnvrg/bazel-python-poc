@@ -1,12 +1,13 @@
 # load("@infaas_deps//:requirements.bzl", "requirement")
 load("@infaas_deps//:requirements.bzl", "requirement")
 
-
 py_library(
     name = "svc",
     deps = [
-        "@infaas_deps//numpy"
-    ],
+        "@infaas_deps//flask",
+        "@infaas_deps//transformers",
+        "@infaas_deps//torch",
+    ], 
 )
 
 py_binary(
